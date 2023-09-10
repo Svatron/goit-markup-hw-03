@@ -1,4 +1,4 @@
-/* Header */
+/* Base */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -9,11 +9,62 @@ body {
   letter-spacing: 0.02em;
 }
 
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+/* Header */
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.page-nav {
+  display: flex;
+  gap: 40px;
 }
 
 .header-logo {
@@ -24,7 +75,9 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
+
 .span-header-logo {
   color: #2e2f42;
   font-family: Raleway, sans-serif;
@@ -42,12 +95,19 @@ ul {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+  padding: 24px 0;
+  display: inline-block;
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
   color: #404bbf;
+}
+
+.mail-nav {
+  display: flex;
+  gap: 40px;
 }
 
 .contacts {
@@ -68,6 +128,7 @@ ul {
 
 .section-one {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .section-one-title {
@@ -77,16 +138,21 @@ ul {
   font-style: normal;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .button {
   background-color: #4d5ae5;
   color: #fff;
-  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 0 auto;
 }
 
 .button:hover,
@@ -96,6 +162,24 @@ ul {
 }
 
 /* Section 2 */
+
+.section-two {
+  padding: 120px;
+}
+
+.visually-hidden {
+  /* Hide h2 in section 2 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .section-two-title {
   font-size: 20px;
@@ -141,7 +225,6 @@ ul {
 }
 
 .team-paragraph {
-  font-size: 16px;
   font-weight: 400;
 }
 
@@ -167,7 +250,6 @@ ul {
 }
 .section-four-paragraph {
   color: #434455;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
