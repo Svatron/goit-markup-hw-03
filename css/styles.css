@@ -58,7 +58,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin-right: 332px;
 }
 
 .page-nav {
